@@ -9,7 +9,7 @@ ARCH=aarch64
 N_JOBS=4
 
 # Fetch latest glibc and create build directory
-git clone https://sourceware.org/git/glibc.git && cd glibcm
+git clone https://sourceware.org/git/glibc.git && cd glibc
 git checkout release/${GLIBC_VERSION}/master
 cd .. && mkdir glibc-build-aarch64 && cd glibc-build-aarch64
 

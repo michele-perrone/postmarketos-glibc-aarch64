@@ -15,7 +15,7 @@ cd .. && mkdir glibc-build-aarch64 && cd glibc-build-aarch64
 
 # Configure glibc (remember we're in the build directory now)
 cp ../configparams configparams 
-../glibc/configure CC=${COMPILER} --build=x86_64-pc-linux-gnu --host=aarch64-linux-gnu --prefix="${PREFIX_DIR}" --libdir="${PREFIX_DIR}/lib" --libexecdir="/${PREFIX_DIR}/lib"
+../glibc/configure CC=${COMPILER} --build=x86_64-pc-linux-gnu --host=aarch64-linux-gnu --prefix="${PREFIX_DIR}" --libdir="${PREFIX_DIR}/lib" --libexecdir="/${PREFIX_DIR}/lib" --enable-stack-protector=strong
 
 # Compile glibc and create the tarball
 make -j${N_JOBS} && sudo make install

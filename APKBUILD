@@ -8,7 +8,7 @@ pkgdesc="GNU C Library compatibility layer"
 arch="aarch64"
 url="https://github.com/michele-perrone/postmarketos-glibc-aarch64"
 license="LGPL"
-source="./glibc-build-aarch64/glibc-bin-$pkgver-$arch.tar.gz
+source="glibc-bin-$pkgver-$arch.tar.gz
 nsswitch.conf
 ld.so.conf"
 subpackages="$pkgname-bin $pkgname-dev $pkgname-i18n"
